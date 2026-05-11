@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1A2016;
+  --color-secondary: #2A2F27;
+  --color-accent: #C1DCDC;
+  --color-gold: #E5B54F;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  background-color: #1A2016;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #1A2016;
+  font-family: var(--font-sans);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+}
